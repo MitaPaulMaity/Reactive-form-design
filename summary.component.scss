@@ -1,0 +1,464 @@
+.contant {
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+label {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 15px;
+    color: #000000;
+}
+
+.form-select {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+div.col-md-3 {
+    width: 295px;
+}
+
+label.row {
+    width: 400px;
+}
+
+.form-control {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.imageLogo {
+    width: 15px;
+    height: 18px;
+    top: 103px;
+    margin-left: 2.5px;
+    position: center;
+    margin-right: 10px;
+}
+
+.display {
+    display: flex;
+}
+
+
+i#Icon1.bi.bi-plus {
+    width: 15px;
+    height: 15px;
+    top: 288px;
+    left: 1125px;
+    font-weight: bolder;
+
+}
+
+button.btn5 {
+    width: 110px;
+    height: 35px;
+    background-color: #4056A1;
+    top: 121px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 14px;
+    color: #ffffff;
+    float: left;
+    margin-left: 250px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.soft-circle {
+    height: 95px;
+    width: 95px;
+    position: relative;
+    border: solid rgb(44, 50, 102) 1px;
+    border-radius: 50%;
+    margin-left: 1196px;
+    padding-bottom: 0rem;
+    margin-top: 10px;
+}
+
+.soft-circle .inside {
+    position: absolute;
+    z-index: 6;
+    top: 50%;
+    left: 50%;
+    height: 80px;
+    width: 80px;
+    margin: -40px 0 0 -40px;
+    background: #fafafa;
+    border-radius: 100%;
+
+}
+
+.soft-circle .key {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(3, 3, 3);
+
+}
+
+.soft-circle .shade {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #eee;
+    -webkit-border-radius: 100%;
+    clip: rect(0px, 100px, 100px, 50px);
+}
+
+.circle .shade .progressing {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    -webkit-border-radius: 100%;
+    clip: rect(0px, 50px, 100px, 0px);
+    background: #111a4b;
+}
+
+.circle .left .progressing {
+    z-index: 1;
+    animation: left 4s linear both;
+}
+
+@keyframes left {
+    100% {
+        transform: rotate(72deg);
+    }
+}
+
+.circle .right {
+    transform: rotate(180deg);
+    z-index: 3;
+}
+
+.circle .right .progressing {
+    animation: right 4s linear both;
+    animation-delay: 4s;
+}
+
+@keyframes right {
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+p.paragraph {
+    width: 141px;
+    height: 30px;
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 12px;
+    margin-left: 640px;
+
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    margin-top: -10px;
+}
+
+
+#inputSelect {
+    width: 149px;
+    height: 40px;
+    left: 727px;
+    background: #F6F3F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    margin-left: 770px;
+    margin-top: -60px;
+    border: none;
+}
+
+
+
+.btn {
+    width: 89px;
+    height: 30px;
+    left: 1106px;
+    margin-left: 870px;
+    margin-bottom: 70px;
+    background-color: #4056A1;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.Cname {
+    display: flex;
+    margin-left: 25px;
+}
+
+#CompanyName {
+    width: 454px;
+    height: 30px;
+    left: 247px;
+    top: 278px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    margin-left: 25px;
+    border: none;
+}
+
+.Oaddres {
+    display: flex;
+    margin-left: 55px;
+}
+
+#OfficeAddress {
+    width: 350px;
+    height: 30px;
+    left: 742px;
+    top: 278px;
+    border: none;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    margin-left: 55px;
+}
+
+#btn1 {
+    width: 37px;
+    height: 35px;
+    top: 278px;
+    font-weight: bolder;
+    margin-top: 15px;
+    margin-left: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #C5CBE3;
+    color: #000000;
+}
+
+#btn2 {
+    width: 37px;
+    height: 35px;
+    top: 278px;
+    left: 1170px;
+    margin-left: 15px;
+    margin-top: 15px;
+    background: #E81D1D;
+    border-radius: 5px;
+    border: none;
+    color: #ffffff;
+}
+
+.display1 {
+    display: flex;
+}
+
+.fname {
+    display: flex;
+    margin-left: 25px;
+    margin-top: 30px;
+}
+
+#fname {
+    width: 200px;
+    height: 30px;
+    left: 247px;
+    top: 352px;
+    margin-left: 25px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    border: none;
+}
+
+.lname {
+    display: flex;
+    margin-left: 25px;
+    margin-top: 30px;
+}
+
+#lname {
+    width: 200px;
+    height: 30px;
+    left: 247px;
+    top: 352px;
+    margin-left: 25px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    border: none;
+}
+
+.phonen {
+    margin-left: 25px;
+    margin-top: -30px;
+}
+
+#phonen {
+    width: 200px;
+    height: 30px;
+    left: 247px;
+    top: 352px;
+    margin-left: 25px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    border: none;
+}
+
+.display2 {
+    display: flex;
+}
+
+.email {
+    display: flex;
+    margin-left: 25px;
+    margin-top: 30px;
+}
+
+#email {
+    width: 200px;
+    height: 30px;
+    left: 247px;
+    top: 352px;
+    margin-left: 25px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    border: none;
+}
+
+.display3 {
+    display: flex;
+}
+
+#Question {
+    width: 210px;
+    height: 35px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    margin-left: 25px;
+    border: none;
+}
+
+#FileUpload {
+    width: 205px;
+    height: 35px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    margin-left: 25px;
+}
+
+.form-switch {
+    margin-top: 50px;
+    margin-left: 25px;
+}
+
+#flexSwitchCheckDefault {
+    margin-right: 20px;
+    margin-top: 0px;
+    width: 40px;
+    height: 20px;
+    left: 475px;
+    top: 567px;
+}
+
+p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 15px;
+    color: #000000;
+}
+
+
+
+
+
+.images {
+    width: 300px;
+    height: 150px;
+}
+
+
+img {
+    width: 15;
+    height: 15;
+    margin-right: 10px;
+}
+
+.Img1 {
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.Img2 {
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.Img3 {
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+button#v-pills-home-tab {
+    text-align: left;
+    font-size: 16px;
+}
+
+.card-body {
+    width: 1200px;
+}
+
+span {
+    width: 50px;
+    margin-left: 5px;
+}
+
+.password {
+    flex-direction: row;
+
+}
+
+div.form-switch {
+    width: 300px;
+    height: 15px;
+    top: 579px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    color: #000000;
+}
+
+button.btn {
+    width: 89px;
+    height: 35px;
+    margin-left: 910px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    color: #ffffff;
+}
+
+label {
+    margin-bottom: 7px;
+}

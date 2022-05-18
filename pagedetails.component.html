@@ -1,0 +1,48 @@
+<div id="tdetail" class="container">
+
+    <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Company Name</th>
+                <th>Where Did You Know About Us</th>
+                <th>Select Tariff Type</th>
+                <th>Select Payment Type</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+            <tbody formArrayName="quantities">
+            <tr *ngFor="let quantity of quantities().controls; let i=index" [formGroupName]="i">
+                <td>{{i+1}}</td>
+                <td><input type="text" id="Cname" formControlName="companyName" class="form-control" aria-label="Company Name"></td>
+                <td><select id="Question" formControlName="whereAbout" class="form-select">
+                    <option selected>--Select--</option>
+                    <option>Google</option>
+                    <option>Twitter</option>
+                    <option>Facebook</option>
+                    <option>Linkedin</option>
+                </select></td>
+                <td><select id="Question" formControlName="selectTariff" class="form-select">
+                        <option selected>--Select--</option>
+                        <option>As Direct</option>
+                        <option>Point to Point</option>
+                    </select></td>
+                <td><select id="Question" formControlName="selectPayment" class="form-select">
+                        <option selected>--Select--</option>
+                        <option>Cash</option>
+                        <option>Prepaid</option>
+                        <option>Postpaid</option>
+                    </select></td>
+                <button *ngIf="quantities().controls.length > 1" (click)="removeQuantity(i)" class="btn btn-danger"><i class="bi bi-trash3"></i></button>
+            </tr>
+        </tbody>
+    </table>
+    <button (click)="addQuantity()" class="BtnBtn"><i class="Icon">+</i></button>
+</form>
+<div><button class="Button">Submit</button></div>
+
+<br/>
+<p>{{this.productForm.value | json}}</p>
+
+</div>
