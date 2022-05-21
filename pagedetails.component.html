@@ -16,7 +16,7 @@
             <tr *ngFor="let quantity of quantities().controls; let i=index" [formGroupName]="i">
                 <td>{{i+1}}</td>
                 <td><input type="text" id="Cname" formControlName="companyName" class="form-control" aria-label="Company Name"></td>
-                <td><select id="Question" formControlName="whereAbout" class="form-select">
+                <td><select id="Question" (change)="onChange(comments.id, $event.target.checked)" formControlName="whereAbout" class="form-select">
                     <option selected>--Select--</option>
                     <option>Google</option>
                     <option>Twitter</option>
@@ -40,7 +40,7 @@
     </table>
     <button (click)="addQuantity()" class="BtnBtn"><i class="Icon">+</i></button>
 </form>
-<div><button class="Button">Submit</button></div>
+<div><button (click)="onSubmit()" class="Button">Submit</button></div>
 
 <br/>
 <p>{{this.productForm.value | json}}</p>
