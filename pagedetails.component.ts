@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl, FormArray, FormBuilder } from '@angular/forms'
+import { FormGroup, FormArray, FormBuilder } from '@angular/forms'
+import { comments } from './comments';
 
 
 @Component({
@@ -9,6 +10,26 @@ import { FormGroup, FormControl, FormArray, FormBuilder } from '@angular/forms'
 })
 export class PagedetailsComponent implements OnInit {
 
+  
+
+  enabled: boolean = false;
+
+  newQuantityFormArray: Array<any> = [];
+
+  comments: comments[] | undefined;
+
+  onChange(id : number, name : string) {
+    if(id) {
+      this.newQuantityFormArray.push(name);
+    } else {
+      let index = this.newQuantityFormArray.indexOf(name);
+      this.newQuantityFormArray.splice(index,1);
+    }
+}
+
+duplicate() {
+  console.log(this.newQuantityFormArray);
+}
 
   productForm: FormGroup;
   private _fb: any;
@@ -22,6 +43,14 @@ export class PagedetailsComponent implements OnInit {
     });
   }
   ngOnInit(): void {
+
+    this.comments = [
+      { name: 'Google', id: 1},
+      { name: 'Twitter', id: 2},
+      { name: 'Facebook', id: 3},
+      { name: 'Linkedin', id: 4},
+    ]
+
     this.productForm = this.fb.group({
       quantities: this.fb.array([this.initquantities()])
     });
@@ -32,7 +61,7 @@ export class PagedetailsComponent implements OnInit {
       companyName: [""],
       whereAbout: [""],
       selectTariff: [""],
-      selectPayment: [""]
+      selectPayment: [""],
     });
   }
 
@@ -55,6 +84,12 @@ export class PagedetailsComponent implements OnInit {
 
   addQuantity() {
     this.quantities().push(this.newQuantity());
+    return this.fb.group({
+      companyName: '',
+      whereAbout: '',
+      selectTariff: '',
+      selectPayment: '',
+    })
   }
 
   removeQuantity(index: number) {
@@ -64,5 +99,6 @@ export class PagedetailsComponent implements OnInit {
   onSubmit() {
     console.log(this.productForm.value);
   }
+
 }
 
